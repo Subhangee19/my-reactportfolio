@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Layout from './components/Layout'
+import Portfolio from './components/Portfolio'
+import Dashboard from './components/Dashboard'
+import Skills from './components/Skills'
+import Education from './components/About/Education'
+import './App.scss'
+import Experience from './components/About/Experience'
+import Certifications from './components/About/Certifications'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/certifications" element={<Certifications />} />
+        </Route>
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,93 @@
+body {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.education-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  background: rgba(16, 27, 30, 0.855);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 2px solid #ffffff; /* Add this line to give the image a white border */
+}
+
+
+.education-details {
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+}
+
+.additional-details {
+  margin-top: 15px;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem; /* Increase the font size for bigger arrows */
+  background: rgba(16, 27, 30, 0.855); /* Semi-transparent background for arrows */
+  color: #ffffff; /* White color for the arrows */
+  border: none;
+  cursor: pointer;
+  padding: 15px; /* Add padding for a larger clickable area */
+  border-radius: 50%; /* Make the background circular */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Add a more prominent shadow to the arrows */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
+
+  &:hover {
+    transform: translateY(-50%) scale(1.2); /* Slightly enlarge the arrows on hover */
+  }
+
+  &.left-arrow {
+    left: 80px; /* Position the left arrow beside the box */
+  }
+
+  &.right-arrow {
+    right: 20px; /* Position the right arrow beside the box */
+  }
+}

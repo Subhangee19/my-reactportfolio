@@ -1,0 +1,47 @@
+.logo-container {
+  z-index: 0;
+  width: 600px;
+  height: 600px;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  margin: auto;
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%; /* Ensure it fits the container */
+    opacity: 0;
+    animation: fadeInRight 4s 0s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+}
+
+
+
+.circle-bgs {
+  top: 10%;
+  right: 30%;
+  bottom: auto;
+  left: auto;
+  margin: auto;
+  position: absolute;
+  width: 450px; // Adjust the size as needed
+  height: 450px; // Adjust the size as needed
+  background-color: #5cf64a;
+  border-radius: 50%;
+  animation: fadeInRight 3s 0s;
+  animation-fill-mode: forwards;
+  z-index: 1; // Ensure it is behind the image
+}
