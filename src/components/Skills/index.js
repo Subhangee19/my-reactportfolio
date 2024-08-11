@@ -68,6 +68,7 @@ const Skills = () => {
                     <p><span style={{ color: '#5cf64a' }}>• Student President of CyberZero club - </span>Organizing and hosting events and motivating participants to join the Computer Science club for promoting innovation, holistic skill development, and knowledge sharing.</p>
                     <p><span style={{ color: '#5cf64a' }}>• Student Coordinator of Annual Sports Meet - </span>Managing participants, maintaining discipline, and helping with queries.</p>
                     <p><span style={{ color: '#5cf64a' }}>• Class Representative - </span>Standing up for student interests and Ensuring the class does not face any problems regarding academic resources.</p>
+                    <p><span style={{ color: '#5cf64a' }}>• Others - </span>Anchoring, Miss SPARK 2021, Miss JDS 2019, Athletics, Dance, Vocals, Speech, Art & Craft.</p>
                 </div>
                 <div className="tag-cloud"></div>
             </div>

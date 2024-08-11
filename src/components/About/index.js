@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import {
   faAngular,
   faCss3,
@@ -6,25 +6,24 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
-import { Link } from 'react-router-dom'
-
+} from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
+import AnimatedLetters from '../AnimatedLetters';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './index.scss';
+import { Link } from 'react-router-dom';
+import PortfolioPDF from '../../assets/pdf/SubhangeeBhattacharjeesCV.pdf'; 
 const About = () => {
 
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate');
     
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             setLetterClass('text-animate-hover');
-        }, 3000)
+        }, 3000);
 
-        // Cleanup function to clear the timeout
         return () => clearTimeout(timeoutId);
-    }, [])
+    }, []);
     
     return (
         <>
@@ -40,15 +39,23 @@ const About = () => {
                 <p>
                 Tech-savvy Software Developer with a passion for React.js, Tailwind CSS, and JavaScript. I’m all about <span style={{ color: '#5cf64a' }}>crafting cool, user-friendly web apps</span> and having fun while doing it! Whether solo or in a team, I love solving problems and learning new tricks. <span style={{ color: '#5cf64a' }}>Ready to bring some creative energy to a web development role!</span>
                 </p>
-                <p>Throughout my academic journey, I’ve always been the one who couldn’t sit still—whether it’s on the field as an <span style={{ color: '#5cf64a' }}>athlete</span> or in the spotlight at <span style={{ color: '#5cf64a' }}>cultural events.</span> I love the thrill of <span style={{ color: '#5cf64a' }}>anchoring events</span> and <span style={{ color: '#5cf64a' }}>sharing presentations;</span> there’s just something about connecting with an audience that energizes me and makes the whole experience unforgettable.</p>
-                <p><span style={{ color: '#5cf64a' }}>Click on these tabs to learn more <b>ABOUT ME!</b></span></p>
+                <p>Throughout my academic journey, I’ve always been the one who couldn’t sit still—whether it’s on the field as an <span style={{ color: '#5cf64a' }}>athlete</span> or in the spotlight at <span style={{ color: '#5cf64a' }}>cultural events.</span> I love the thrill of <span style={{ color: '#5cf64a' }}>anchoring events</span> and <span style={{ color: '#5cf64a' }}>sharing presentations;</span> there’s just something about connecting with an audience that energizes me and makes the whole experience unforgettable.
+                </p>
+                <p>I’m also a bit of a language buff! Fluent in <span style={{ color: '#5cf64a' }}>English, Hindi, and Bengali</span>—I can switch between them like flipping pages in a book. Oh, and I’m just starting my journey with <span style={{ color: '#5cf64a' }}>German</span>—so far, I can say "Hallo" with confidence!</p>
+                <p><span style={{ color: '#5cf64a' }}>Click on these tabs to learn more <b>ABOUT ME! </b></span>
+                  <span style={{ color: '#5cf64a', cursor: 'pointer' }}>
+                    <a href={PortfolioPDF} target="_blank" rel="noopener noreferrer" style={{ color: '#5cf64a', textDecoration: 'none' }}>
+                      Also, <u>Take a look at my <b>CV</b></u>
+                    </a>
+                  </span>
+                </p>
                 
-                    <Link to="/education" className='flat-button'>EDUCATION</Link>
-            <Link to="/experience" className='flat-button'>EXPERIENCE</Link>
-            <Link to="/certifications" className='flat-button'>CERTIFICATIONS</Link>
-        
+                <Link to="/education" className='flat-button'>EDUCATION</Link>
+                <Link to="/experience" className='flat-button'>EXPERIENCE</Link>
+                <Link to="/certifications" className='flat-button'>CERTIFICATIONS</Link>
+                
+                
             </div>
-            
 
             <div className='stage-cube-cont'>
                 <div className='cubespinner'>
@@ -72,10 +79,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         <Loader type="pacman" />
         </>
     )
 }
 
-export default About
+export default About;
