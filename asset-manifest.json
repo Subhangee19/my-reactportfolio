@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-reactportfolio/static/css/main.f21af49c.css",
-    "main.js": "/my-reactportfolio/static/js/main.8bfbe7cb.js",
+    "main.css": "/my-reactportfolio/static/css/main.096030de.css",
+    "main.js": "/my-reactportfolio/static/js/main.96de9805.js",
     "static/js/453.bc5b5346.chunk.js": "/my-reactportfolio/static/js/453.bc5b5346.chunk.js",
     "static/media/tech.png": "/my-reactportfolio/static/media/tech.cc88592af8d4f8739064.png",
     "static/media/niu.png": "/my-reactportfolio/static/media/niu.1869e30d5d2135b0d2a1.png",
@@ -30,6 +30,7 @@
     "static/media/cyberthon.png": "/my-reactportfolio/static/media/cyberthon.bba71aacf5ac4fe6b690.png",
     "static/media/susu.png": "/my-reactportfolio/static/media/susu.2e4fdb8b7d2fe9dcf6c6.png",
     "static/media/publish.png": "/my-reactportfolio/static/media/publish.c1c7f788b6af26a3848b.png",
+    "static/media/SubhangeeBhattacharjeesCV.pdf": "/my-reactportfolio/static/media/SubhangeeBhattacharjeesCV.b56c1992028220920cad.pdf",
     "static/media/sathee.jpg": "/my-reactportfolio/static/media/sathee.609c6007bade93bb79cc.jpg",
     "static/media/logo-s.png": "/my-reactportfolio/static/media/logo-s.fe6ba6c4243c0c7ce300.png",
     "static/media/helvetica-neu.ttf": "/my-reactportfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -40,12 +41,12 @@
     "static/media/niulogo.jpeg": "/my-reactportfolio/static/media/niulogo.10cbfc87be11229fbe86.jpeg",
     "static/media/CoolveticaRg-Regular.woff2": "/my-reactportfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/my-reactportfolio/index.html",
-    "main.f21af49c.css.map": "/my-reactportfolio/static/css/main.f21af49c.css.map",
-    "main.8bfbe7cb.js.map": "/my-reactportfolio/static/js/main.8bfbe7cb.js.map",
+    "main.096030de.css.map": "/my-reactportfolio/static/css/main.096030de.css.map",
+    "main.96de9805.js.map": "/my-reactportfolio/static/js/main.96de9805.js.map",
     "453.bc5b5346.chunk.js.map": "/my-reactportfolio/static/js/453.bc5b5346.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f21af49c.css",
-    "static/js/main.8bfbe7cb.js"
+    "static/css/main.096030de.css",
+    "static/js/main.96de9805.js"
   ]
 }
